@@ -5,16 +5,15 @@ from __future__ import (absolute_import, division,
 from collections import defaultdict
 from math import sqrt, atan2, degrees, sin, cos, radians, pi, hypot
 import traceback
-import FreeCAD
-import FreeCADGui
-import Part
-from FreeCAD import Console,Vector,Placement,Rotation
-import DraftGeomUtils,DraftVecUtils
-import Path
+#import FreeCAD
+#import FreeCADGui
+#import Part
+#from FreeCAD import Console,Vector,Placement,Rotation
+#import DraftGeomUtils,DraftVecUtils
+from pathlib import Path
 
 import sys, os
 import re
-sys.path.append(os.path.dirname(os.path.realpath(__file__)))
 from .kicad_parser import KicadPCB,SexpList,SexpParser,parseSexp
 from .kicad_parser import unquote
 
